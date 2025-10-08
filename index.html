@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araç Satış Sitesi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 24px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 32px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .car-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .car {
+            background: #fafafa;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 20px;
+            text-align: center;
+        }
+        .car img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+        .car h2 {
+            margin: 8px 0 4px 0;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+        .car p {
+            color: #555;
+            margin: 0 0 8px 0;
+        }
+        .price {
+            color: #e67e22;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .buy-btn {
+            background: #27ae60;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.2s;
+        }
+        .buy-btn:hover {
+            background: #219150;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Araç Satış Sitesi</h1>
+        <p>Hayalinizdeki aracı hemen bulun!</p>
+    </header>
+    <div class="container">
+        <div class="car-list">
+            <div class="car">
+                <img src="https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=400&q=80" alt="Sedan">
+                <h2>2022 Sedan</h2>
+                <p>Otomatik | Benzin | 25.000 km</p>
+                <div class="price">₺850.000</div>
+                <button class="buy-btn">Satın Al</button>
+            </div>
+            <div class="car">
+                <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=400&q=80" alt="SUV">
+                <h2>2021 SUV</h2>
+                <p>Manuel | Dizel | 40.000 km</p>
+                <div class="price">₺1.150.000</div>
+                <button class="buy-btn">Satın Al</button>
+            </div>
+            <div class="car">
+                <img src="https://images.unsplash.com/photo-1461632830798-3adb3034e4c8?auto=format&fit=crop&w=400&q=80" alt="Hatchback">
+                <h2>2020 Hatchback</h2>
+                <p>Otomatik | Benzin | 15.000 km</p>
+                <div class="price">₺650.000</div>
+                <button class="buy-btn">Satın Al</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
